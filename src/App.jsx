@@ -1,11 +1,14 @@
 import React from "react";
-import Header from "./Header";
+import './styles.css';
+import './section1.css';
+import Header from "./components/Header";
+import Section1 from "./components/Section1";
 
 const App = () => {
   return (
-    <div>
+    <div className="scroll-container">
       <Header />
-     {/* add components or sections */}
+      <Section1 />
     </div>
   )
 };

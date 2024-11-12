@@ -66,3 +66,36 @@ ul li:hover{
     font-size: 3em;
     display: none ;
 }
+
+.section{
+    min-height: 100vh;
+    padding: 10% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.gradient-txt{
+    background: linear-gradient(270deg, darkblue 35%, silver 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* scrolling */
+
+header, .scroll-container{
+    margin: 0 auto;
+}
+
+
+.scroll-container{
+    /* do not reinstate this, overflow-y: scroll; creates a new scroll bar haha */
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+}
+
+.scroll-page{
+    height: 100%;
+}
