@@ -1,0 +1,55 @@
+/* width has to be 80vw or below! any higher and the corners stop being rounded */
+.listing-container{
+    display: flex;
+    width: 80vw;
+}
+
+.listing-ttl{
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.section2{
+    min-height: 100vh;
+    padding: 10% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: 0;
+    opacity: 0;
+
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
