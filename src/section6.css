@@ -1,0 +1,34 @@
+.section6 {
+    min-height: 100vh;
+    padding: 10% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.partner-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px;
+    max-width: 600px;
+    padding: 8px;
+}
+
+.partner-card {
+    background-color: #1c1c1e;
+    color: white;
+    border-radius: 10px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.2s ease;
+}
+
+.round{
+    border-radius: 50%;
+    overflow: hidden;
+}
