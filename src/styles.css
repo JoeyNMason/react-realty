@@ -100,6 +100,23 @@ header, .scroll-container{
     height: 100%;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
 @media(max-width: 1200px){
     section{
         flex-direction: column;
