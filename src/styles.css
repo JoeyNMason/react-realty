@@ -99,3 +99,17 @@ header, .scroll-container{
 .scroll-page{
     height: 100%;
 }
+
+@media(max-width: 1200px){
+    section{
+        flex-direction: column;
+        margin: 10em 2em;
+        padding: 10% 5%;
+    }
+    header ul{
+        display: none;
+    }
+    #menu-icon{
+        display: block;
+    }
+}
